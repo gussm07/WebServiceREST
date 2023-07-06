@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Eliminar Empresa</h2>
+      <div class="carprerd-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Id:</label>
+            <!-- ngModel permmite obtener el objeto dentro del campo id-->
+            <input
+              type="text"
+              class="form-control"
+              name="id"
+              [(ngModel)]="hospital.id"
+              disabled="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">Nombre:</label>
+            <!-- ngModel permmite obtener el objeto dentro del campo id-->
+            <input
+              type="text"
+              class="form-control"
+              name="nombre"
+              [(ngModel)]="hospital.nombre"
+              disabled="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">Telefono:</label>
+            <!-- ngModel permmite obtener el objeto dentro del campo id-->
+            <input
+              type="text"
+              class="form-control"
+              name="telefono"
+              [(ngModel)]="hospital.telefono"
+              disabled="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">Direccion:</label>
+            <!-- ngModel permmite obtener el objeto dentro del campo id-->
+            <input
+              type="text"
+              class="form-control"
+              name="precio"
+              [(ngModel)]="hospital.direccion"
+              disabled="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">No. Camas:</label>
+            <!-- ngModel permmite obtener el objeto dentro del campo id-->
+            <input
+              type="text"
+              class="form-control"
+              name="precio"
+              [(ngModel)]="hospital.no_camas"
+              disabled="true"
+            />
+          </div>
+
+          <button class="btn btn-danger" (click)="Eliminar()">Eliminar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
